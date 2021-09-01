@@ -195,6 +195,15 @@ async def saranghaek(ctx):
             hy = i
     await ctx.send(hy.mention + ', 장충즈 서버 덕담방에 보낸 메시지에서 유래되어 사랑한다는 말을 할 때 쓰인다.')
 
+hy = None
+@bot.command(aliases = ['머그꺼야힝'])
+async def meogukkeoyahing(ctx):
+    for i in bot.get_guild(806480753537581106).members:
+        if i.id == 773906164466843700:
+            global hy
+            hy = i
+    await ctx.send(hy.mention + ', 본인이 "먹을 거야" 를 "머그꺼야" 라고 발음하는 것을 깨달아 사용하던 것에서 유래되었다.')
+    
 token = 'ODQwMjIwOTUwMjUwNTIwNTk2.YJVCvQ.K0boSoOcDBJ4ANzN1FslTn0O3ag'
 
 bot.run(token)
