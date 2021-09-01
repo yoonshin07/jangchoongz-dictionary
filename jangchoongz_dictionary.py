@@ -149,14 +149,17 @@ async def ggyu(ctx):
 
 # 지민 ***********************************************************************************************
 jm = None
+sh = None
 @bot.command(aliases = ['조용히애이새끼야'])
 async def quietbird(ctx):
     for i in bot.get_guild(806480753537581106).members:
         if i.id == 805951202747219970:
             global jm
             jm = i
+    if i.id == 770576567075078184:
+            global sh
+            sh = i
     await ctx.send(jm.mention + ', ' + sh.mention + '의 이모티콘 도배 때문에 조용히 하라고 말한 것에서 유래되었다.')
-
 
 # 희윤 ***********************************************************************************************
 hy = None
