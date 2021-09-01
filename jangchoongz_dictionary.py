@@ -148,6 +148,15 @@ async def ggyu(ctx):
     await ctx.send(ek.mention + ", 지랄")
 
 # 지민 ***********************************************************************************************
+jm = None
+@bot.command(aliases = ['조용히애이🕊끼야'])
+async def quietbird(ctx):
+    for i in bot.get_guild(806480753537581106).members:
+        if i.id == 805951202747219970:
+            global jm
+            jm = i
+    await ctx.send(jm.mention + ', ' + sh.mention + '의 이모티콘 도배 때문에 조용히 하라고 말한 것에서 유래되었다.')
+
 
 # 희윤 ***********************************************************************************************
 hy = None
@@ -157,7 +166,7 @@ async def standardlng(ctx):
         if i.id == 773906164466843700:
             global hy
             hy = i
-    await ctx.send(hy.mention + ', ' + hy.mention + '의 욕이 비속어 같지 않고 표준어처럼 들린다는 뜻에서 유래된 것이다.')
+    await ctx.send(hy.mention + ', ' + hy.mention + '의 욕이 비속어 같지 않고 표준어처럼 들린다는 뜻에서 유래되었다.')
 
 hy = None
 @bot.command(aliases = ['와타범범', '渦打汎汎'])
@@ -203,7 +212,7 @@ async def meogukkeoyahing(ctx):
             global hy
             hy = i
     await ctx.send(hy.mention + ', 본인이 "먹을 거야" 를 "머그꺼야" 라고 발음하는 것을 깨달아 사용하던 것에서 유래되었다.')
-    
+
 token = 'ODQwMjIwOTUwMjUwNTIwNTk2.YJVCvQ.K0boSoOcDBJ4ANzN1FslTn0O3ag'
 
 bot.run(token)
