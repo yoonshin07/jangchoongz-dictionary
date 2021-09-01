@@ -149,7 +149,7 @@ async def ggyu(ctx):
 
 # 지민 ***********************************************************************************************
 jm = None
-@bot.command(aliases = ['조용히애이🕊끼야'])
+@bot.command(aliases = ['조용히애이새끼야'])
 async def quietbird(ctx):
     for i in bot.get_guild(806480753537581106).members:
         if i.id == 805951202747219970:
@@ -205,7 +205,7 @@ async def saranghaek(ctx):
     await ctx.send(hy.mention + ', 장충즈 서버 덕담방에 보낸 메시지에서 유래되어 사랑한다는 말을 할 때 쓰인다.')
 
 hy = None
-@bot.command(aliases = ['머그꺼야힝'])
+@bot.command(aliases = ['힝', '머그꺼야', '머그꺼야힝'])
 async def meogukkeoyahing(ctx):
     for i in bot.get_guild(806480753537581106).members:
         if i.id == 773906164466843700:
