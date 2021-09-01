@@ -86,6 +86,6 @@ async def standardlng(ctx):
             hy = i
     await ctx.send(hy.mention + ', ' + hy.mention + '의 욕이 비속어 같지 않고 표준어처럼 들린다는 뜻에서 유래되었다.')
 
-token = 'ODQwMjIwOTUwMjUwNTIwNTk2.YJVCvQ.K0boSoOcDBJ4ANzN1FslTn0O3ag'
+token = 'ODQwMjIwOTUwMjUwNTIwNTk2.YJVCvQ.xrUFE6fJKt4qJjPKudNhyocgWM4'
 
 bot.run(token)
