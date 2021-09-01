@@ -156,7 +156,7 @@ async def quietbird(ctx):
         if i.id == 805951202747219970:
             global jm
             jm = i
-    if i.id == 770576567075078184:
+        if i.id == 770576567075078184:
             global sh
             sh = i
     await ctx.send(jm.mention + ', ' + sh.mention + '의 이모티콘 도배 때문에 조용히 하라고 말한 것에서 유래되었다.')
